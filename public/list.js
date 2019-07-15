@@ -14,7 +14,7 @@ async function getData(){
         const windspeed = document.createElement('p');
         const pressure = document.createElement('p');
         
-        city.textContent = `London: ${item.city}`;
+        city.textContent = `City: ${item.city}`;
         weather.textContent = `Current weather: ${item.weather}`;
         mintemp.textContent = `min temp: ${item.mintemp}`;
         maxtemp.textContent = `max temp: ${item.maxtemp}`;
