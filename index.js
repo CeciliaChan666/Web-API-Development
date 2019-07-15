@@ -35,7 +35,7 @@ app.post('/api', (request, response) =>{
 
 app.get('/location/:city', async (request, response) => {
     const city = request.params.city;
-    const location_url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=88b5040ac450b0a898e2387e7fee7faf`;
+    const location_url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=717eb515e7be88b4a1f4e652f61bef37`;
     const location_response = await fetch(location_url);
     const location = await location_response.json();
     response.json(location);
